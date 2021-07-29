@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* <button class=" bg-red-900 rounded-md h-10 " value="+" onclick="dis('+')">+</button>
+<button class=" bg-red-900 rounded-md h-10 " onclick="dis('-')" >-</button>
+<button class=" bg-red-900 rounded-md h-10 " onclick="dis('*')">*</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="dis('/')">/</button>
+<button class=" bg-red-900 rounded-md h-10 " onclick="dis('1')">1</button>
+<button class=" bg-red-900 rounded-md h-10 " onclick="dis('2')">2</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="dis('3')">3</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="dis('4')">4</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="dis('5')">5</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="dis('6')">6</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="dis('7')">7</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="dis('8')">8</button>
+<button class=" bg-red-900 rounded-md h-10 " onclick="dis('9')">9</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="dis('.')">.</button>
+<button class=" bg-red-300 rounded-md h-10 " onclick="clearAll()">Clear</button>
+<button class=" bg-gray-500 rounded-md h-10 " onclick="result()">=</button> */
+
+
+
+/* <button class=" bg-red-900 rounded-md h-10 " value="+" onclick="">+</button>
+<button class=" bg-red-900 rounded-md h-10 " onclick="" >-</button>
+<button class=" bg-red-900 rounded-md h-10 " onclick="">*</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="">/</button>
+<button class=" bg-red-900 rounded-md h-10 " onclick="">1</button>
+<button class=" bg-red-900 rounded-md h-10 " onclick="">2</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="">3</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="">4</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="">5</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="">6</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="">7</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="">8</button>
+<button class=" bg-red-900 rounded-md h-10 " onclick="">9</button>
+<button class=" bg-red-900 rounded-md h-10 "  onclick="">.</button>
+<button class=" bg-red-300 rounded-md h-10 " onclick="">Clear</button>
+<button class=" bg-gray-500 rounded-md h-10 " onclick="">=</button> */

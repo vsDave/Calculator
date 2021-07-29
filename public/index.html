@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* button :hover{
+            background-color: black;
+            color: cornsilk;
+            
+        } */
+    </style>
+</head>
+<body class=" bg-yellow-200 mt-28 mr-48 ml-48 ">
+    <div class=" flex flex-col">
+        <div class="border border-black">
+        <h1 class="text-center">Calculator</h1>
+        <div class="flex  ">
+            <input class=" justify-center flex-1 bg-gray-500 h-24 text-2xl" id="myInput" type="text">
+        </div>
+    <div class="grid grid-cols-4 gap-2 m-4 ">
+        <!-- <button class=" bg-red-900 rounded-md h-10 " value="+" onclick="">+</button>
+        <button class=" bg-red-900 rounded-md h-10 " onclick="" >-</button>
+        <button class=" bg-red-900 rounded-md h-10 " onclick="">*</button>
+        <button class=" bg-red-900 rounded-md h-10 "  onclick="">/</button>
+        <button class=" bg-red-900 rounded-md h-10 " onclick="">1</button>
+        <button class=" bg-red-900 rounded-md h-10 " onclick="">2</button>
+        <button class=" bg-red-900 rounded-md h-10 "  onclick="">3</button>
+        <button class=" bg-red-900 rounded-md h-10 "  onclick="">4</button>
+        <button class=" bg-red-900 rounded-md h-10 "  onclick="">5</button>
+        <button class=" bg-red-900 rounded-md h-10 "  onclick="">6</button>
+        <button class=" bg-red-900 rounded-md h-10 "  onclick="">7</button>
+        <button class=" bg-red-900 rounded-md h-10 "  onclick="">8</button>
+        <button class=" bg-red-900 rounded-md h-10 " onclick="">9</button>
+        <button class=" bg-red-900 rounded-md h-10 "  onclick="">.</button>
+        <button class=" bg-red-300 rounded-md h-10 " onclick="">Clear</button>
+        <button class=" bg-gray-500 rounded-md h-10 " onclick="calculate()">=</button> -->
+        
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" value="+" onclick="dis('+')">+</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400 " onclick="dis('-')" >-</button>
+    <button class=" bg-red-900 rounded-md h-10  text-4xl font-bold hover:bg-red-400" onclick="dis('*')">*</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" onclick="dis('/')">/</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" onclick="dis('1')">1</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" onclick="dis('2')">2</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" onclick="dis('3')">3</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" onclick="dis('4')">4</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" onclick="dis('5')">5</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" onclick="dis('6')">6</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" onclick="dis('7')">7</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" onclick="dis('8')">8</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" onclick="dis('9')">9</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" onclick="dis('0')">0</button>
+    <button class=" bg-red-900 rounded-md h-10 text-4xl font-bold hover:bg-red-400" onclick="dis('.')">.</button>
+    <button class=" bg-red-300 rounded-md h-10 text-3xl font-bold hover:bg-red-900" onclick="clearAll()">Clear</button>
+    <button class=" bg-gray-500 rounded-md h-10 text-3xl font-bold hover:bg-green-400"onclick="result()">=</button> 
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
+<SCript>
+   
+    // let myinput = document.getElementById('myInput');
+    // const buttons =document.querySelectorAll('button');
+    // let screenValue ='';
+    //  for(item of buttons){
+    //      item.addEventListener('click' ,(e)=>{
+    //          buttonText = e.target.innerText;
+    //          console.log('Button text is', buttonText);
+    //          if(buttonText=='='){
+    //              myInput.value =eval(screenValue);
+    //          }
+    //          else if(buttonText=='Clear'){
+    //              screenValue = "";
+    //              myInput.value=screenValue;
+                
+    //          }
+    //          else{
+    //             screenValue +=buttonText;
+    //             myInput.value=screenValue;
+    //          }
+    //      })
+    //  }
+
+
+    function dis(val){
+        document.getElementById("myInput").value += val;
+    }
+
+    function clearAll(){
+        document.getElementById("myInput").value=" ";
+    }
+    
+   function result(){
+        let x = document.getElementById("myInput").value;
+        console.log(x);
+        let y= eval(x);
+        console.log(y)
+      document.getElementById("myInput").value= y
+     
+   }
+
+// function calculate(x, y, operation) {
+//   if (operation === '+') return x + y
+//   else if (operation === '-') return x - y
+//   else if (operation === '*') return x * y
+//   else if (operation === '/') return x / y
+//   else if (operation === '%') return x % y
+//   else if (operation === '**') return x ** y
+//   else return NaN
+// }
+</SCript>
